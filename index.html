@@ -1,67 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides com CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-}
+    <div class="slider">
+        <!-- Controles dos slides -->
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <input type="radio" name="slide" id="slide5">
+        
+        <!-- Slides -->
+        <div class="slides">
+            <!-- Slide 1: Imagem -->
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x400?text=Imagem+1" alt="Imagem 1">
+            </div>
 
-.container {
-    position: relative;
-    width: 80%;
-    height: 70vh;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+            <!-- Slide 2: Texto -->
+            <div class="slide">
+                <h1>Bem-vindo ao Slide 2</h1>
+                <p>Este é um slide de texto com conteúdo informativo.</p>
+            </div>
 
-.slide {
-    display: none;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    color: #333;
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
+            <!-- Slide 3: Texto -->
+            <div class="slide">
+                <h1>Conheça o Slide 3</h1>
+                <p>Aqui temos mais informações sobre o projeto.</p>
+            </div>
 
-.slide img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-}
+            <!-- Slide 4: Texto -->
+            <div class="slide">
+                <h1>O Slide 4 está aqui</h1>
+                <p>Esse slide continua com texto explicativo.</p>
+            </div>
 
-.controls {
-    margin-top: 20px;
-    text-align: center;
-}
+            <!-- Slide 5: Imagem -->
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x400?text=Imagem+2" alt="Imagem 2">
+            </div>
+        </div>
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+        <!-- Navegação -->
+        <div class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+        </div>
+    </div>
 
-button:hover {
-    background-color: #0056b3;
-}
-
-.show {
-    display: flex;
-}
+</body>
+</html>
